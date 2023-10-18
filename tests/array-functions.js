@@ -20,3 +20,19 @@ export const arrayPush = (arrayToPush, data) => {
 	const newArrayLength = arrayLength(arrayToPush);
 	return newArrayLength;
 };
+
+// Array.unshift()
+
+export const arrayUnshift = (arrayToIterate, item) => {
+	if (Array.isArray(item)) {
+		const unshiftArrayToArray = [...item, ...arrayToIterate];
+
+		return arrayLength(unshiftArrayToArray);
+	}
+
+	const temporaryArray = [0, ...arrayToIterate];
+	temporaryArray[0] = item;
+	console.log(temporaryArray);
+
+	return arrayLength(temporaryArray);
+};

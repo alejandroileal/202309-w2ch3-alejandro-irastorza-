@@ -1,4 +1,4 @@
-import { arrayLength, arrayPush } from './array-functions';
+import { arrayLength, arrayPush, arrayUnshift } from './array-functions';
 
 describe('Given the length function', () => {
 	describe('When the argument is [1, 2, 3]', () => {
@@ -74,6 +74,32 @@ describe('Given the push function', () => {
 			const expected = 6;
 
 			const result = arrayPush(n, x);
+
+			expect(result).toBe(expected);
+		});
+	});
+});
+
+describe('Given the unshift function', () => {
+	describe('When the argument is ["e", "l", "l", "o"], "h', () => {
+		test('The result should be 5', () => {
+			const n = ['e', 'l', 'l', 'o'];
+			const y = 'h';
+			const expected = 5;
+
+			const result = arrayUnshift(n, y);
+
+			expect(result).toBe(expected);
+		});
+	});
+
+	describe('When the argument is [1, 2, 3], 4, 5, 6', () => {
+		test('The result should be 6', () => {
+			const n = [1, 2, 3];
+			const y = [4, 5, 6];
+			const expected = 6;
+
+			const result = arrayUnshift(n, y);
 
 			expect(result).toBe(expected);
 		});
