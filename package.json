@@ -10,7 +10,7 @@
     "sass": "sass scss:css -w --no-source-map"
   },
   "keywords": [],
-  "author": "Alejandro Irastorza",
+  "author": "Alejandro Irastorza Leal",
   "license": "ISC",
   "prettier": {
     "singleQuote": true

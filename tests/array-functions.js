@@ -1,12 +1,22 @@
-//array.length()
+// Array.length()
+
 export const arrayLength = (array) => {
-  let acc = 0;
+	if (!Array.isArray(array)) {
+		throw new Error('Asegúrate de utilizar un Array');
+	}
 
-  for (const position of array) {
-    acc++;
-  }
+	let acc = 0;
 
-  return acc;
+	for (const position of array) {
+		acc++;
+	}
+
+	return acc;
 };
 
-//
+// Array.push()
+export const arrayPush = (arrayToPush, data) => {
+	arrayToPush[arrayLength(arrayToPush)] = data;
+	const newArrayLength = arrayLength(arrayToPush);
+	return newArrayLength;
+};
