@@ -8,7 +8,6 @@ export const arrayLength = (array) => {
 	let acc = 0;
 
 	for (const position of array) {
-		console.log(position);
 		acc++;
 	}
 
@@ -33,7 +32,15 @@ export const arrayUnshift = (arrayToIterate, item) => {
 
 	const temporaryArray = [0, ...arrayToIterate];
 	temporaryArray[0] = item;
-	console.log(temporaryArray);
 
 	return arrayLength(temporaryArray);
+};
+
+// Array.pop()
+
+export const arrayPop = (arrayToIterate) => {
+	const lastElementPosition = arrayLength(arrayToIterate) - 1;
+	const lastElement = arrayToIterate[lastElementPosition];
+	console.log(lastElement);
+	return lastElement;
 };
