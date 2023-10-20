@@ -44,3 +44,24 @@ export const arrayPop = (arrayToIterate) => {
   console.log(lastElement);
   return lastElement;
 };
+
+// Array.shift()
+
+export const arrayPop = (arrayToIterate, ...itemToAdd) => {
+  export const arrayShift = (arrayToIterate, item) => {
+    const newArray = [...arrayToIterate, ...item];
+
+    return arrayLength(newArray);
+  };
+};
+
+// Array.some()
+
+export const arraySome = (arrayToIterate, condition) => {
+  for (let i = 0; i < arrayToIterate.length; i++) {
+    if (condition(arrayToIterate[i])) {
+      return true;
+    }
+  }
+  return false;
+};
