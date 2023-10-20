@@ -79,7 +79,7 @@ export const arrayEvery = (arrayToIterate, conditionToCompare) => {
 
 // Array.find()
 
-export const miFind = (arrayToSearch, condition) => {
+export const arrayFind = (arrayToSearch, condition) => {
   for (let i = 0; i < arrayToSearch.length; i++) {
     if (condition(arrayToSearch[i])) {
       return arrayToSearch[i];
