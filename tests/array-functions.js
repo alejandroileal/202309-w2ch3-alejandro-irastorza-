@@ -94,7 +94,7 @@ export const arrayFilter = (arrayToFilter, condition) => {
   const filteredArray = [];
   for (let i = 0; i < arrayToFilter.length; i++) {
     if (condition(arrayToFilter[i])) {
-      filteredArray.push(arrayToFilter[i]);
+      arrayPush(filteredArray, arrayToFilter[i]);
     }
   }
   return filteredArray;
