@@ -47,7 +47,7 @@ export const arrayPop = (arrayToIterate) => {
 
 // Array.shift()
 
-export const arrayPop = (arrayToIterate, ...itemToAdd) => {
+export const arrayShift = (arrayToIterate, ...itemToAdd) => {
   export const arrayShift = (arrayToIterate, item) => {
     const newArray = [...arrayToIterate, ...item];
 
