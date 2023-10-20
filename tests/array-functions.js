@@ -87,3 +87,15 @@ export const arrayFind = (arrayToSearch, condition) => {
   }
   return undefined;
 };
+
+// Array.filter
+
+export const arrayFilter = (arrayToFilter, condition) => {
+  const filteredArray = [];
+  for (let i = 0; i < arrayToFilter.length; i++) {
+    if (condition(arrayToFilter[i])) {
+      filteredArray.push(arrayToFilter[i]);
+    }
+  }
+  return filteredArray;
+};
