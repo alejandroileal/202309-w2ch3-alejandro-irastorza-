@@ -65,3 +65,14 @@ export const arraySome = (arrayToIterate, condition) => {
   }
   return false;
 };
+
+// Array.every()
+
+export const arrayEvery = (arrayToIterate, conditionToCompare) => {
+  for (let i = 0; i < arrayToIterate.length; i++) {
+    if (!conditionToCompare(arrayToIterate[i])) {
+      return false;
+    }
+  }
+  return true;
+};
